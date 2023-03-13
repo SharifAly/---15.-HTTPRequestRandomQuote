@@ -1,75 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
-
-
-:root {
-    --white: #fff;
-    --black: #1c2b2d;
-    --blue: #31326f;
-    --light-blue: #005490;
-    --color-primary: #9d0191;
-    --color-sec: #db6400;
-    --color-grey: #eee;
-    --color-dark-grey: #222831;
-}
-
 * {
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
-}
-
-html {
-    font-size: 62.5%;
+    font-family: monospace;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    padding-top: 5rem;
+    background-color: #f43543;
 }
 
-
-
-p {
-    font-size: 1.6rem;
-    line-height: 1.5;
-}
-
-img {
-    width: 100%;
+.wrapper {
+    width: 400px;
+    border: 1px solid white;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
 }
 
 .container {
-    max-width: 1200px;
+    width: 100%;
+    background-color: #f43543;
+    padding: 55px 40px;
+    box-shadow: 0 20px 65px rgba(87, 11, 16, 0.5);
+    position: relative;
+    border-radius: 5px;
+}
+
+.container:after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 120%;
+    background-color: #ffffff;
+    z-index: -1;
+    top: -10%;
+    left: 10%;
+}
+
+.container p {
+    color: #fdd8d8;
+    line-height: 2;
+    font-size: 1.5rem;
+}
+
+.container h3 {
+    color: #ffffff;
+    margin: 20px 0 60px 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.container button {
+    background-color: #ffffff;
+    border: none;
+    padding: 15px 45px 50px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #f43543;
+    cursor: pointer;
+    width: 100%;
     margin: 0 auto;
-    padding: 0 1rem;
-    display: flex;
-    justify-content: space-between;
 }
-
-.user {
-    width: 45%;
-    border: 1px solid #eee;
-    padding: 5px;
-}
-
-.user > * {
-    margin: 5px 0;
-}
-button {
-    padding: 1rem;
-}
-
-hr {
-    background-color: #1c2b2d;
-}
-
-ul {
-    list-style: circle;
-    padding-left: 1.5rem;
-}
-
-ul li {
-    font-size: 1.4rem;
-    padding: 5px 0;
-}
-
